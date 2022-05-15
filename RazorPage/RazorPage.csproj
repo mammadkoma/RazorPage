@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Pages\Index.cshtml.js" />
+    <None Include="wwwroot\js\Index.js" />
   </ItemGroup>
 
   <ItemGroup>
