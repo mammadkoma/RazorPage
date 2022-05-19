@@ -4,33 +4,26 @@ namespace RazorPage.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
-
-        public IndexModel(ILogger<IndexModel> logger)
-        {
-            _logger = logger;
-        }
-
         public List<object> tests { get; set; }
 
         public void OnGet()
         {
-            var service = new TestService();
-            tests = service.GetAll();
-        }
-    }
 
-    public class TestService
-    {
-        public List<object> GetAll()
-        {
-            return new List<object>() { new { Id = 1, Name = "111" }, new { Id = 2, Name = "222" } };
         }
-    }
 
-    public class Test
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
+        //public IEnumerable<object> GetMembers()
+        //{
+        //    var members = db.MembersTb
+        //        .Select(m => new { Id = m.MemberId, FullName = m.FullName })
+        //        .ToList();
+
+        //    //foreach (var item in members)
+        //    //{
+        //    //    item.Id = item.Id + 1;
+        //    //    item.FullName = item.FullName + " " + "*";
+        //    //}
+
+        //    return members;
+        //}
     }
 }
