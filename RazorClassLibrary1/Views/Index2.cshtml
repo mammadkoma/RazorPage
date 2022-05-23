@@ -1,0 +1,43 @@
+﻿@using RazorClassLibrary1.Views
+@model Report1Model
+
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - RazorPage</title>
+    <link rel="stylesheet" href="~/css/site.css">
+    <link rel="stylesheet" href="site.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            <html>
+            <div class="text-center">
+                <span>سلام @Model.Name</span>
+                <button type="submit" class="btn btn-success">دانلود Pdf</button>
+            </div>
+        </html>
+
+    </main>
+</div>
+
+@*<footer class="border-top footer text-muted">
+    <div class="container">
+        &copy; 2022 - RazorPage - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    </div>
+</footer>*@
+
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>*@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    @*<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
